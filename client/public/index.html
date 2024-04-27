@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form class="form" id="poll-form">
+    <form class="form hidden" id="poll-form">
       <input type="radio" class="poll-option" name="poll-option" value="Option 1" id="option1">
       <label for="option1">Option 1</label><br>
       <input type="radio" class="poll-option" name="poll-option" value="Option 2" id="option2">
       <label for="option2">Option 2</label><br>
       <input type="radio" class="poll-option" name="poll-option" value="Option 3" id="option3">
       <label for="option3">Option 3</label><br>
+
+      <!-- <input type="password" id="create-room-password" placeholder="Enter room password"> -->
       <button type="submit" class="poll-submit">Submit</button>
-    </form>
+    </form> 
 
     <ul id="poll-results"></ul>
 
@@ -29,6 +31,13 @@
       <li id="-room"><ul class="messages" id="-messages"></ul></li>
     </ul>
     <form class="form" id="message-form" action="">
+      <!-- <div class="list"> -->
+        <!-- <button id="dropButton" >+</button>
+        <div id="drop-list" class="dropUp-content">
+          <a href="#" id="Voting">Voting</a>
+          <a href="#">Gambar</a>
+        </div> -->
+      <!-- </div> -->
       <input class="input" id="message-input" autocomplete="off" /><button>Send</button>
     </form>
     <form class="form" id="room-form" action="">

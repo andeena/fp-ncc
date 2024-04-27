@@ -47,10 +47,10 @@ io.on('connection', (socket) => {
 
     socket.on("join room", (data) => {
         socket.join(data.room);
-        // rooms.push(data.room);
+        rooms.push(data.room);
 
         if (!rooms.includes(data.room)) {
-            rooms.push(data.room);
+            // rooms.push(data.room);
             //buat ngasih tau daftar room
             io.emit('roomsList', rooms);
         }

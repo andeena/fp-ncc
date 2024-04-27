@@ -157,11 +157,3 @@ function updatePollResults(newPollResults) {
         pollResultsElement.appendChild(optionResult);
     }
 }
-
-
-
-
-
-
-
-
